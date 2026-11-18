@@ -70,8 +70,9 @@ illustrated control has been implemented.
 
 The workflow results above apply to the identified commits.
 
-This documentation update has not yet been validated by
-GitHub Actions. A new run is required after it is committed.
+Validation applies only to the commit checked by its workflow run.
+For current results, consult the GitHub Actions checks on Pull Request #1.
+Earlier runs do not validate subsequent revisions.
 
 Merge into dev: Pending Grace Adjeli approval.
 Merge into main: Not authorized.
