@@ -1,2 +1,13 @@
-*
-!.gitignore
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# macOS files
+.DS_Store
+
+# Locally generated evidence
+/artifacts/*
+!/artifacts/.gitignore
