@@ -1,0 +1,37 @@
+name: GxE-CS-02 validation
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Character and attribution hygiene
+        run: python scripts/check_hygiene.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Evidence run and manifest
+        run: python scripts/run_evidence.py
+      - name: Upload correlated synthetic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gxe-cs02-evidence-python-${{ matrix.python-version }}
+          path: artifacts/
+          if-no-files-found: warn
+          retention-days: 30
