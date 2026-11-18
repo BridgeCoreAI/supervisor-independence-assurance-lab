@@ -1,7 +1,7 @@
 # GxE-CS-02 | Test Specifications and Evidence Acceptance Criteria
 
 **Author:** Grace Adjeli  
-**Status:** Approved test baseline (2026-11-18); tests not executed  
+**Status:** Approved test baseline (2026-11-18); tests not executed at baseline approval. See [validation status](validation-status.md) for subsequent results.
 **Research baseline:** See `docs/research-charter.md`  
 **Target branch:** dev
 

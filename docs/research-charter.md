@@ -4,7 +4,7 @@
 **Project:** Supervisor Independence Assurance Lab  
 **Author:** Grace Adjeli  
 **Organization:** BridgeCore AI  
-**Status:** Approved research baseline (2026-11-18); no tests executed  
+**Status:** Approved research baseline (2026-11-18); no tests executed at baseline approval. See [validation status](validation-status.md) for subsequent results.
 **Repository:** BridgeCoreAI/supervisor-independence-assurance-lab  
 **Development branch:** dev
 

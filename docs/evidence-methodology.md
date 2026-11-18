@@ -9,7 +9,7 @@ Each adversarial test records the trusted synthetic actor, attempted operation, 
 
 The observer reads protected policy bytes, version and SHA-256 digest; approved exception records; target marker; and execution count. These observations are compared against the expected outcome. A DENY log without supporting state checks is not enough to support a PASS conclusion.
 
-Case status is PASS only when both the expected outcomes and all required checks match. If protected state cannot be observed, the result is INCONCLUSIVE. If the observed state violates an expected invariant, the result is FAIL. The EVID-STATE test deliberately injects a state change from the trusted harness and checks that the reconciliation logic calls it FAIL. It is a test of the observer logic, not a demonstrated supervisor bypass.
+Case status is PASS only when both the expected outcomes and all required checks match. If protected state cannot be observed, the result is INCONCLUSIVE. If the observed state violates an expected invariant, the result is FAIL. The EVID-FAULT-INJECTION test deliberately injects a state change from the trusted harness and checks that the reconciliation logic calls it FAIL. It is a test of the observer logic, not a demonstrated supervisor bypass.
 
 ## Reproducing a run
 
