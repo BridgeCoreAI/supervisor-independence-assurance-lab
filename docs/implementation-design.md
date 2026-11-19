@@ -2,9 +2,8 @@
 
 **Author:** Grace Adjeli
 **Organization:** BridgeCore AI
-**Status:** Approved implementation design (2026-11-18); implementation and validation tracked separately
-**Target branch:** dev
-**Approved baselines:** docs/research-charter.md and docs/test-specifications.md
+**Scope:** Deterministic Python reference implementation of the defined synthetic scenarios.
+**Research references:** docs/research-charter.md and docs/test-specifications.md
 
 ## 1. Objective
 
@@ -80,7 +79,7 @@ HUMAN_REVIEW stops execution. A separately approved exception requires a fresh g
 
 Each negative test must assert actual protected state rather than passing only because the gate returned DENY.
 
-## 7. Proposed source layout
+## 7. Source layout
 
 ```text
 src/supervisor_independence/
@@ -128,10 +127,6 @@ In continuous integration, an evidence manifest should record the exact tested c
 Any unauthorized effective policy or exception change, or any prohibited customer record modification, is FAIL. Missing observation, invalid evidence correlation, or an unexamined alternate access path produces an explicit INCONCLUSIVE or scoped limitation, not a PASS.
 
 This reference design does not demonstrate infrastructure isolation, cryptographically authenticated users, a tamper-resistant log against process compromise, physical or service-level independence, race resistance, or comprehensive agent prompt-injection protection. Any broader assurance claim requires additional tests and deployment evidence.
-
-## 10. Review and development controls
-
-The research charter, test specifications and implementation design were approved by Grace Adjeli on 2026-11-18. Changes are prepared for dev; no merge to main, public release, or article publication without Grace Adjeli's explicit approval. Commits are to be created through an author-controlled signing workflow; writing "Grace Adjeli" in metadata is not a substitute for GitHub verification.
 
 **Governance is not what is defined. It is what is enforced at execution.**
 

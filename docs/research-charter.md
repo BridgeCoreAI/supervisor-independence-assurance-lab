@@ -4,9 +4,8 @@
 **Project:** Supervisor Independence Assurance Lab  
 **Author:** Grace Adjeli  
 **Organization:** BridgeCore AI  
-**Status:** Approved research baseline (2026-11-18); no tests executed at baseline approval. See [validation status](validation-status.md) for subsequent results.
+**Research scope:** GxE-CS-02 synthetic supervisor independence scenarios. See [validation results](validation-status.md).
 **Repository:** BridgeCoreAI/supervisor-independence-assurance-lab  
-**Development branch:** dev
 
 ## 1. Purpose and problem statement
 
@@ -60,7 +59,7 @@ Protected assets include active policy content, policy digest and version, appro
 
 Threats in scope are self-authorization, unauthorized policy mutation, bypass of the intended API, and mismatch between reported decision and observed state. The test runner supplies trusted synthetic actor identities; the supervisor cannot designate itself as an approver or administrator by setting a request field.
 
-Cryptographically authenticated identity, compromise of the host or test runner, malicious authorized administrators, production distributed-system races, and comprehensive adversarial prompt testing are outside the initial scope. These limitations must be documented in published claims.
+Cryptographically authenticated identity, compromise of the host or test runner, malicious authorized administrators, production distributed-system races, and comprehensive adversarial prompt testing are outside the initial scope.
 
 ## 7. Control invariants and acceptance criteria
 
@@ -82,10 +81,6 @@ Never mark an expected result as an observed result until tests have actually ru
 ## 9. Bounded assurance claim
 
 If the tests pass, the lab may claim that the specified supervisor-originated attempts were rejected and that designated protected states remained unchanged **within the tested synthetic implementation and access paths**. It must not claim production deployment, universal bypass resistance, independent certification, or continuous protection of all AI agent systems.
-
-## 10. Release, authorship, and decision control
-
-Research and code development occur on `dev`. `main` is reserved for reviewed changes. No merge, public repository release, or newsletter publication is authorized without Grace Adjeli's explicit approval. Author attribution is Grace Adjeli; no hidden characters, artificial co-author footers, or unnecessary generated metadata are to be introduced. Verified GitHub signatures must be checked on resulting commits; author credit alone does not constitute a signed commit.
 
 **Governance is not what is defined. It is what is enforced at execution.**
 
