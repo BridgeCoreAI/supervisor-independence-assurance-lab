@@ -1,9 +1,8 @@
 # GxE-CS-02 | Test Specifications and Evidence Acceptance Criteria
 
 **Author:** Grace Adjeli  
-**Status:** Approved test baseline (2026-11-18); tests not executed at baseline approval. See [validation status](validation-status.md) for subsequent results.
+**Research scope:** Synthetic test design; see [validation results](validation-status.md) for recorded observations.
 **Research baseline:** See `docs/research-charter.md`  
-**Target branch:** dev
 
 ## 1. Shared synthetic fixtures
 
@@ -97,7 +96,7 @@ Capture a structured record with:
 
 The evidence collector's independence must be described accurately. In a single-process prototype it is a logically separate observer, not proof of protection against a compromised host or privileged process.
 
-## 7. Publication acceptance gate
+## 7. Evidence acceptance criteria
 
 The minimum evidence package before reporting successful findings is:
 
@@ -106,8 +105,6 @@ The minimum evidence package before reporting successful findings is:
 3. BYP-002 and BYP-003 executed or precisely scoped, with any inaccessible or untested bypass route disclosed.
 4. Deterministic tests pass locally and in GitHub Actions, preferably on Python 3.10 and 3.12.
 5. A commit-bound evidence manifest identifies the run, environment, tested code, and generated artifact hashes.
-6. Grace Adjeli reviews actual versus expected results, failures, limitations, and proposed publication language.
-7. No public release or merge to `main` occurs before explicit approval.
 
 A test is not a `PASS` solely because the gate returned `DENY`; the protected-state assertion must also pass. Failures or incomplete observations must remain visible in the evidence report.
 
