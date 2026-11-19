@@ -4,7 +4,8 @@
 **Research title:** When the AI Supervisor Becomes the Risk: Testing Independent Execution Governance  
 **Author:** Grace Adjeli  
 **Organization:** BridgeCore AI  
-**Status:** Private reference implementation under author review
+**Technical status:** Validated synthetic reference implementation; 13 tests passed on both Python 3.10 and 3.12 at the identified main-branch commit  
+**Release status:** Private; public publication requires separate author approval
 
 ## Research question
 
@@ -37,12 +38,17 @@ python scripts/run_evidence.py
 
 The evidence command writes JSON files to `artifacts/` (ignored by Git). The manifest records a Git commit only when a clean checkout or GitHub Actions context is available. Tests executed in an uncommitted zip are local-only evidence and cannot be described as commit-bound.
 
+## Validation and evidence
+
+The reviewed implementation was merged into `main` on 2026-11-18. GitHub Actions run [44394195627](https://github.com/BridgeCoreAI/supervisor-independence-assurance-lab/actions/runs/44394195627) succeeded at commit `15df2b3f2ba94b04d4aff480873ca33ee37ceac1` on Python 3.10 and 3.12 (13 unit tests each), including text hygiene checks and synthetic evidence artifact uploads. See the [reconciled validation and release record](docs/validation-status.md) for tested scope, evidence retention, and release conditions. Workflow artifacts are not permanent public evidence hosting.
+
 ## Research documents
 
 - [Approved research charter](docs/research-charter.md)
 - [Approved test specifications](docs/test-specifications.md)
 - [Approved implementation design](docs/implementation-design.md)
 - [Evidence and limitations](docs/evidence-methodology.md)
+- [Reconciled validation and release status](docs/validation-status.md)
 
 ## Research constraints
 
@@ -51,7 +57,7 @@ The evidence command writes JSON files to `artifacts/` (ignored by Git). The man
 - Python components share process memory; direct access by a privileged process is not prevented.
 - Tested alternate interfaces are not exhaustive bypass testing.
 - No production assurance, real AI supervisor, or external certification is claimed.
-- No merge into `main`, public release, or article publication without Grace Adjeli's approval.
+- The reviewed implementation was merged into `main` on 2026-11-18. No public release, repository visibility change, or article publication is authorized without Grace Adjeli's separate approval.
 
 **Governance is not what is defined. It is what is enforced at execution.**
 
