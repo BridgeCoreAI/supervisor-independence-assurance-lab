@@ -50,6 +50,10 @@ GitHub Actions run [44394195627](https://github.com/BridgeCoreAI/supervisor-inde
 - [Evidence and limitations](docs/evidence-methodology.md)
 - [Validation results and evidence provenance](docs/validation-status.md)
 
+## License
+
+This repository is licensed under the [Apache License, Version 2.0](LICENSE). Copyright 2026 Grace Adjeli. See [NOTICE](NOTICE) for attribution.
+
 ## Research constraints
 
 - Policies and customer records are synthetic.
