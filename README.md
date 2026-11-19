@@ -4,6 +4,7 @@
 **Research title:** When the AI Supervisor Becomes the Risk: Testing Independent Execution Governance  
 **Author:** Grace Adjeli  
 **Organization:** BridgeCore AI  
+**Copyright:** © 2026 Grace Adjeli  
 **Validation:** 13 automated tests passed on Python 3.10 and 3.12 at the recorded source commit.
 
 ## Research question
