@@ -13,15 +13,15 @@ Repository: `BridgeCoreAI/supervisor-independence-assurance-lab`
 
 ## 2. Recorded validation evidence
 
-- Tested commit: `15df2b3f2ba94b04d4aff480873ca33ee37ceac1`
-- GitHub Actions run: `44394195627`
+- Tested commit: `9c51a8d425d75faef19674722ee3f01e8da6acfa`
+- GitHub Actions run: `44534708484`
 - Run attempt: `1`
 - Workflow: `GxE-CS-02 validation`
-- Result: SUCCESS on 2026-11-18
-- Python 3.10: 13 unit tests passed; text hygiene and evidence generation succeeded; evidence artifact uploaded (ID `14468883864`).
-- Python 3.12: 13 unit tests passed; text hygiene and evidence generation succeeded; evidence artifact uploaded (ID `14469773067`).
+- Result: SUCCESS on 2026-11-19
+- Python 3.10: 13 unit tests passed; text hygiene and evidence generation succeeded; evidence artifact uploaded (ID `14534524763`).
+- Python 3.12: 13 unit tests passed; text hygiene and evidence generation succeeded; evidence artifact uploaded (ID `14535606961`).
 
-[Inspect the final validation run](https://github.com/BridgeCoreAI/supervisor-independence-assurance-lab/actions/runs/44394195627)
+[Inspect the recorded validation run](https://github.com/BridgeCoreAI/supervisor-independence-assurance-lab/actions/runs/44534708484)
 
 The uploaded artifacts are associated with this workflow and tested commit. The workflow retains them for 30 days; uploaded workflow artifacts are not permanent public evidence hosting.
 
