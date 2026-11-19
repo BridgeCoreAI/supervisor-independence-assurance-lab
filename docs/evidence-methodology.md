@@ -34,7 +34,7 @@ A workflow run uses GitHub's `GITHUB_SHA`, `GITHUB_RUN_ID` and `GITHUB_RUN_ATTEM
 - No model, prompt injection, distributed-system race, network API, or real customer action tested.
 - The verification results are not an external audit or production certificate.
 
-Report the actual results and limitations in the article after review. A published claim may be no stronger than the evidence supporting it.
+An assurance conclusion must not exceed the evidence supporting it.
 
 **Governance is not what is defined. It is what is enforced at execution.**
 
